@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1{
+    color: transparent;
+    background-image: linear-gradient(135deg, #B19FFF 0%, #ECA1FE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+}
+
+.currency-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.currency-name{
+    font-size: 1.0rem;
+    font-weight: 400;
+
+}
+
+.currency-row{
+    display: block;
+
+}
+
+.currency-options{
+    display: flex;
+    gap: 20px;
+}
+
+input, select{
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    background-color: #f8f8fa;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+input:focus, select:focus{
+    border-color: #ECA1FE;
+    box-shadow: 0 0 10px rgba(82, 113, 196, 0.2);
+    transform: translateY(-2px);
+}
+
+label{
+    font-size: 1.0rem;
+    font-weight: 600;
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.converter-button{
+    background-image: linear-gradient(135deg, #B19FFF 0%, #ECA1FE 100%);
+    color: #f8f8fa;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 40px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.converter-button:hover{
+    transform: translateY(-4px);
+}
+
+.loading{
+    width: 30px;
+    height: 30px;
+    border: 3px solid #f3f3f3;
+    border-top: 4px solid #dc9ce9;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: #333;
+    
+}
+
+.spinner{
+    display: none;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.info{
+    font-size: 0.8rem;
+    margin-top: 20px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.result-container{
+    background-color: #f8f8fa;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0;
+    border: 2px solid #dc9ce9;
+    box-shadow: 0 0 10px rgba(82, 113, 196, 0.2);
+}
